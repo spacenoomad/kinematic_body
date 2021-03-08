@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/char.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.3546, 26.8048 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+scale = Vector2( 1.75979, 1.75979 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.184064, 0.184064 )
+texture = ExtResource( 1 )
